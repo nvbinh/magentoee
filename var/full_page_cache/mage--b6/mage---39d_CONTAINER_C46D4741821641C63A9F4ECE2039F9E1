@@ -1,0 +1,22 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1438143547;s:6:"expire";i:1438229947;s:4:"tags";s:79:"39d_FPC,39d_CATALOG_PRODUCT_425,39d_BLOCK_HTML,39d_CATALOG_PRODUCT_425,39d_MAGE";}
+<div class="block block-list block-viewed">
+    <div class="block-title">
+        <strong><span>Recently Viewed Products</span></strong>
+    </div>
+    <div class="block-content">
+        <ol id="recently-viewed-items" class="mini-products-list">
+                    <li class="item">
+                <a href="http://127.0.0.1/magentoee/lafayette-convertible-dress.html">
+                    <span class="product-image"><img src="http://127.0.0.1/magentoee/media/catalog/product/cache/1/thumbnail/50x50/9df78eab33525d08d6e5fb8d27136e95/images/catalog/product/placeholder/thumbnail.jpg" width="50" height="50" alt="" /></span>
+                </a>
+                <div class="product-details">
+                    <p class="product-name">
+                        <a href="http://127.0.0.1/magentoee/lafayette-convertible-dress.html">
+                            Lafayette Convertible Dress                        </a>
+                    </p>
+                </div>
+            </li>
+                </ol>
+        <script type="text/javascript">decorateList('recently-viewed-items');</script>
+    </div>
+</div>
