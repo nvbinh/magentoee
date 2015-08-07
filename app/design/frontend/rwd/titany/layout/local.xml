@@ -42,6 +42,9 @@ Supported layout update handles (special):
 Default layout, loads most of the pages
 -->
     <default>
+    	<reference name="head">
+    		<action method="addCss"><stylesheet>css/titany.css</stylesheet></action>
+    	</reference>
         <reference name="header">
             <!--add banner logo after site logo-->
             <block type="cms/block" name="cms_banner_logo" as="cms_banner_logo">

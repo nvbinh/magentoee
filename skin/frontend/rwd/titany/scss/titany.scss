@@ -1,1 +1,15 @@
 @import "core";
+
+html,
+body {
+	color: #686460;
+}
+
+.page {
+	/*background: url(../images/bg-page.png) center top no-repeat;*/
+}
+
+i[class*="icons"] {
+	display: inline-block;
+	vertical-align: text-top;
+}

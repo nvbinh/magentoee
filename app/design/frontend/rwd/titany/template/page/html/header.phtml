@@ -35,13 +35,24 @@
                 <?php echo $this->getChildHtml('store_language') ?>
             </li>
             <li>
-                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
-                    <span class="icon"></span>
-                    <span class="label"><?php echo $this->__('Account'); ?></span>
+                <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>">
+                <!-- data-target-element="#header-account" -->
+                    <i class="icons-account">&nbsp;</i>
+                    <span class="label"><?php echo $this->__('my account'); ?></span>
                 </a>
             </li>
             <li>
                 <?php echo $this->getChildHtml('minicart_head'); ?>
+            </li>
+            <li>
+                <a href="/checkout/">
+                <i class="icons-checkout">&nbsp;</i>
+                <?php echo $this->__('checkout'); ?></a>
+            </li>
+            <li>
+                <a href="/customer/account/login/">
+                <i class="icons-login">&nbsp;</i>
+                <?php echo $this->__('log in'); ?></a>
             </li>
         </ul>
         <div class="header__middle">
@@ -52,7 +63,7 @@
                 <?php echo $this->getChildHtml('cms_banner_logo'); ?>
             </span>
 
-            <span class="header__search skip-content" id="header-search">
+            <span class="header__search">
                 <?php echo $this->getChildHtml('topSearch') ?>
             </span>
         </div>
