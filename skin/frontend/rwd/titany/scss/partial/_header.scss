@@ -1,0 +1,35 @@
+.header {
+	&__top {
+		text-align: right;
+		li {
+			display: inline-block;
+			.icons-account {
+				margin-top: 2px;
+			}
+			.icons-cart {
+				margin-top: 2px;
+			}
+			.icons-checkout {
+				margin-top: 5px;
+			}
+			.icons-login {
+				margin-top: 5px;
+			}
+			a {
+				color: #667d95;
+			}
+		}
+	}
+	&__middle {
+
+	}
+	&__search {
+		float: right;
+		width: 25%;
+		height: 50px;
+		margin-top: 17px;
+	}
+	&__banner {
+		display: inline-block;
+	}
+}

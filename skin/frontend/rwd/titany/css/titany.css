@@ -1,0 +1,86 @@
+.icons-sprite, .icons-account, .icons-cart, .icons-checkout, .icons-login {
+  background-image: url('../images/icons-s98f1467406.png');
+  background-repeat: no-repeat;
+}
+
+.icons-account {
+  background-position: 0 0;
+  height: 13px;
+  width: 11px;
+}
+
+.icons-cart {
+  background-position: 0 -23px;
+  height: 11px;
+  width: 11px;
+}
+
+.icons-checkout {
+  background-position: 0 -44px;
+  height: 7px;
+  width: 9px;
+}
+
+.icons-login {
+  background-position: 0 -61px;
+  height: 8px;
+  width: 9px;
+}
+
+/*@charset "UTF-8";
+
+$font: 12px/1.55 "Lucida Grande", Tahoma, Helvetica, Arial, sans-serif;
+
+body,
+button,
+input,
+select,
+table,
+textarea {
+    font: $font;
+    color: #686460;
+}*/
+.header__top {
+  text-align: right;
+}
+.header__top li {
+  display: inline-block;
+}
+.header__top li .icons-account {
+  margin-top: 2px;
+}
+.header__top li .icons-cart {
+  margin-top: 2px;
+}
+.header__top li .icons-checkout {
+  margin-top: 5px;
+}
+.header__top li .icons-login {
+  margin-top: 5px;
+}
+.header__top li a {
+  color: #667d95;
+}
+.header__search {
+  float: right;
+  width: 25%;
+  height: 50px;
+  margin-top: 17px;
+}
+.header__banner {
+  display: inline-block;
+}
+
+html,
+body {
+  color: #686460;
+}
+
+.page {
+  /*background: url(../images/bg-page.png) center top no-repeat;*/
+}
+
+i[class*="icons"] {
+  display: inline-block;
+  vertical-align: text-top;
+}

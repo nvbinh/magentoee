@@ -1,0 +1,39 @@
+@import "compass/utilities/sprites";
+$icons-sprite-dimensions: true;
+$icons-spacing: 10px;
+@import "icons/*.png";
+@include all-icons-sprites(true);
+
+
+//http://compass-style.org/reference/compass/helpers/sprites/
+@mixin get-sprite($map, $sprite, $repeat: no-repeat, $height: true, $width: true) {
+
+  $sprite-image: sprite-file($map, $sprite);
+  
+  $sprite-map: sprite-url($map);
+  
+  $sprite-position: sprite-position($map, $sprite);
+  
+  background: $sprite-map $sprite-position $repeat;
+  
+	@if $height == true {
+		$sprite-height: image-height($sprite-image);
+		height: $sprite-height;
+	}
+    
+  @if $width == true {
+    $sprite-width: image-width($sprite-image);
+    width: $sprite-width;
+    }
+}
+
+//create a small helper for your sprites
+@mixin icon-sprite($name, $merge:false){
+  @if $merge == false {
+    //default via extend
+    @extend .icons-#{$name};
+  }@else{
+    //mixin shown here, used to merge in the generated sprite information
+    @include get-sprite($icons-sprites,$name);
+  }
+}
