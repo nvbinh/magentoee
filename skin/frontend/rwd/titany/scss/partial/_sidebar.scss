@@ -1,0 +1,57 @@
+.sidebar {
+	&__newtheme {
+		.title {
+			text-align: right;
+			strong {
+				float: left;
+			}
+		}
+		.action {
+			li {
+				display: inline-block;
+			}
+			.previous {
+				@include icon-sprite('previous');
+				&.active {
+					@include icon-sprite('previousActive');
+				}
+			}
+			.next {
+				@include icon-sprite('next');
+				&.active {
+					@include icon-sprite('nextActive');
+				}
+			}
+		}
+	}
+}
+
+
+.main-tabs {
+	margin: 0 0 3px;
+	border-bottom: 3px solid #414d5d;
+}
+.main-tabs li {
+	display: inline;
+	margin-right: -10px;
+}
+.main-tabs li.active a span {
+	background-position: 0 -70px;
+}
+.main-tabs li a span {
+	background: url(../images/bkg_main-tabs.png) 0 0 no-repeat;
+	padding: 0 0 0 15px;
+	display: inline-block;
+	line-height: 35px;
+	height: 35px;
+}
+.main-tabs li a span span {
+	background-position: 100% -35px;
+	padding: 0 30px 0 0;
+}
+.main-tabs li.active a {
+	z-index: 11;
+}
+.main-tabs li.active a span span {
+	background-position: 100% -105px;
+}
