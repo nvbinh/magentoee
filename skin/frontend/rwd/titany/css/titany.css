@@ -1,5 +1,5 @@
-.icons-sprite, .icons-account, .icons-cart, .icons-checkout, .icons-login {
-  background-image: url('../images/icons-s98f1467406.png');
+.icons-sprite, .icons-account, .icons-cart, .icons-checkout, .icons-login, .icons-next, .sidebar__newtheme .action .next, .icons-nextActive, .sidebar__newtheme .action .next.active, .icons-previous, .sidebar__newtheme .action .previous, .icons-previousActive, .sidebar__newtheme .action .previous.active {
+  background-image: url('../images/icons-s12a9ce20a0.png');
   background-repeat: no-repeat;
 }
 
@@ -27,6 +27,30 @@
   width: 9px;
 }
 
+.icons-next, .sidebar__newtheme .action .next {
+  background-position: 0 -79px;
+  height: 22px;
+  width: 22px;
+}
+
+.icons-nextActive, .sidebar__newtheme .action .next.active {
+  background-position: 0 -111px;
+  height: 22px;
+  width: 22px;
+}
+
+.icons-previous, .sidebar__newtheme .action .previous {
+  background-position: 0 -143px;
+  height: 22px;
+  width: 22px;
+}
+
+.icons-previousActive, .sidebar__newtheme .action .previous.active {
+  background-position: 0 -175px;
+  height: 22px;
+  width: 22px;
+}
+
 /*@charset "UTF-8";
 
 $font: 12px/1.55 "Lucida Grande", Tahoma, Helvetica, Arial, sans-serif;
@@ -40,6 +64,10 @@ textarea {
     font: $font;
     color: #686460;
 }*/
+.header {
+  width: 980px;
+  margin: 0 auto;
+}
 .header__top {
   text-align: right;
 }
@@ -69,6 +97,51 @@ textarea {
 }
 .header__banner {
   display: inline-block;
+}
+
+.sidebar__newtheme .title {
+  text-align: right;
+}
+.sidebar__newtheme .title strong {
+  float: left;
+}
+.sidebar__newtheme .action li {
+  display: inline-block;
+}
+
+.main-tabs {
+  margin: 0 0 3px;
+  border-bottom: 3px solid #414d5d;
+}
+
+.main-tabs li {
+  display: inline;
+  margin-right: -10px;
+}
+
+.main-tabs li.active a span {
+  background-position: 0 -70px;
+}
+
+.main-tabs li a span {
+  background: url(../images/bkg_main-tabs.png) 0 0 no-repeat;
+  padding: 0 0 0 15px;
+  display: inline-block;
+  line-height: 35px;
+  height: 35px;
+}
+
+.main-tabs li a span span {
+  background-position: 100% -35px;
+  padding: 0 30px 0 0;
+}
+
+.main-tabs li.active a {
+  z-index: 11;
+}
+
+.main-tabs li.active a span span {
+  background-position: 100% -105px;
 }
 
 html,

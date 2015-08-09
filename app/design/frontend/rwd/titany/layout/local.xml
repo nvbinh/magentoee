@@ -51,6 +51,21 @@ Default layout, loads most of the pages
                 <action method="setBlockId"><block_id>banner_logo</block_id></action>
             </block>
         </reference>
+        <reference name="left">
+            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">
+            </block>
+            <block type="core/template" name="product.new.theme" template="catalog/product/newtheme.phtml">
+            </block>
+            <block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml">
+            </block>
+        </reference>
+        <reference name="right">
+            <action method="unsetChild"><name>cart_sidebar</name></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="product.list.tabs" template="catalog/product/listtab.phtml">
+            </block>
+        </reference>
     </default>
 
 </layout>

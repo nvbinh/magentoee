@@ -1,1 +1,3 @@
 var/cache
+var/session
+skin/frontend/rwd/titany/.sass-cache/
