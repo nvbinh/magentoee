@@ -1,0 +1,16 @@
+.global-site-notice.demo-notice {
+	display: none;
+}
+.main {
+	width: 980px;
+	margin: 0 auto;
+	padding: 15px 15px 0;
+	background: #f0f0f0;
+	border-radius: 5px;
+	.breadcrumbs {
+		margin: 0 0 10px 0;
+		li {
+			text-transform: none;
+		}
+	}
+}

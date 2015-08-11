@@ -48,13 +48,21 @@ Default layout, loads most of the pages
         <reference name="header">
             <!--add banner logo after site logo-->
             <block type="cms/block" name="cms_banner_logo" as="cms_banner_logo">
+                <action method="setLimit"><value>3</value></action>
                 <action method="setBlockId"><block_id>banner_logo</block_id></action>
             </block>
         </reference>
         <reference name="left">
+            <remove name="catalog.leftnav" />
+            <!-- <block type="cms/block" name="cms_related_product_catalog" as="cms_related_product_catalog">
+                <action method="setBlockId"><block_id>related_product_catalog</block_id></action>
+            </block> -->
             <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">
             </block>
             <block type="core/template" name="product.new.theme" template="catalog/product/newtheme.phtml">
+            </block>
+            <block type="cms/block" name="cms_custom_services" as="cms_custom_services">
+                <action method="setBlockId"><block_id>custom_services</block_id></action>
             </block>
             <block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml">
             </block>
