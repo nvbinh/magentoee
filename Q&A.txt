@@ -1,0 +1,9 @@
+1. 
+Q: How to get new product in magento?
+
+2. 
+Q: Get hot product in Magento?
+
+3.
+Q: Resize Product Image?
+A: $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize, $_imgHeight);
